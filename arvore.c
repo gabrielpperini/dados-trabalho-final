@@ -71,12 +71,12 @@ nodo *consulta(nodo *a, char p[50])
         comp++;
         if (compare == 0)
         {
-            // comp++;
+            comp++;
             return a;
         }
         else
         {
-            // comp++;
+            comp++;
             a = compare > 0 ? a->esq : a->dir;
         }
     }

@@ -1,0 +1,4 @@
+{
+  "c-cpp-compile-run.run-args": "data/dic.txt data/entrada.txt data/saida.txt",
+  "files.encoding": "iso88591"
+}

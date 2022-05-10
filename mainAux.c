@@ -35,7 +35,7 @@ nodo *CriarArvoreDicionario(nodo *arvore, FILE *arq, int arvType)
 void parafraseaTexto(nodo *arvore, FILE *entrada, FILE *saida)
 {
     char *palavra, linha[1000]; // linhas a serem lidas do arquivo
-    char separador[] = {" ,.&*%\?!;/'@\"$#=><()][}{:\n\t"};
+    char separador[] = {" ,.&*%%\\?!;/'@\"$#=><()][}{:\n\t"};
 
     // percorre todo o arquivo lendo linha por linha
     while (fgets(linha, 1000, entrada))

@@ -101,7 +101,7 @@ nodo *InsereArvoreAVLAUX(nodo *a, char palavra[max_palavra], char traducao[max_p
         a->FB = 0;
         *ok = 1;
     }
-    else if (strcmp(palavra, a->palavra) < 0)
+    else if (strcmp(palavra, a->palavra) < 0) // compara a palavra a ser inserida com a palavra do nodo
     {
         a->esq = InsereArvoreAVLAUX(a->esq, palavra, traducao, ok);
         if (*ok)
@@ -147,6 +147,6 @@ nodo *InsereArvoreAVLAUX(nodo *a, char palavra[max_palavra], char traducao[max_p
 nodo *InsereArvoreAVL(nodo *a, char palavra[max_palavra], char traducao[max_palavra])
 {
     int ok;
-    strlwr(palavra);
+    strlwr(palavra);  // coloca a palavra como minuscula
     return InsereArvoreAVLAUX(a, palavra, traducao, &ok);
 }

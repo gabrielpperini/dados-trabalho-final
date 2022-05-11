@@ -85,6 +85,7 @@ nodo *consulta(nodo *a, char p[50])
     return NULL;
 }
 
+// Imprime as estatísticas do programa no terminal
 void printEstatisticas(char arv[3], float tempoArv, float tempoSaida, nodo *arvore)
 {
     printf("\n\n======== ESTATÍSTICAS %s ========\n", arv);

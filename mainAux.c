@@ -18,7 +18,7 @@ nodo *CriarArvoreDicionario(nodo *arvore, FILE *arq, int arvType)
             // define palavras
             palavra = strtok(linha, "\t");
             traducao = strtok(NULL, "\t\n");
-            // insere palavras na arvore
+            // insere palavras na arvore dependendo seu modelo: ABP =1 e AVL != 1
             if (arvType == 1)
             {
                 arvore = InsereArvoreABP(arvore, palavra, traducao);

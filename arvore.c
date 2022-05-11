@@ -64,12 +64,13 @@ void imprimiArvore(nodo *a)
 
 nodo *consulta(nodo *a, char p[50])
 {
-    strlwr(p);
+    strlwr(p); // coloca a palavra para minusculo
     while (a != NULL)
     {
+        // compara string 
         int compare = strcmp(p, a->palavra);
         comp++;
-        if (compare == 0)
+        if (compare == 0) // se for igual
         {
             comp++;
             return a;
@@ -77,6 +78,7 @@ nodo *consulta(nodo *a, char p[50])
         else
         {
             comp++;
+            // compara para determinar qual subárvore seguir
             a = compare < 0 ? a->esq : a->dir;
         }
     }

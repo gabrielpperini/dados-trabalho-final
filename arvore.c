@@ -77,7 +77,7 @@ nodo *consulta(nodo *a, char p[50])
         else
         {
             comp++;
-            a = compare > 0 ? a->esq : a->dir;
+            a = compare < 0 ? a->esq : a->dir;
         }
     }
     return NULL;

@@ -101,7 +101,7 @@ nodo *InsereArvoreAVLAUX(nodo *a, char palavra[max_palavra], char traducao[max_p
         a->FB = 0;
         *ok = 1;
     }
-    else if (strcmp(palavra, a->palavra) > 0)
+    else if (strcmp(palavra, a->palavra) < 0)
     {
         a->esq = InsereArvoreAVLAUX(a->esq, palavra, traducao, ok);
         if (*ok)

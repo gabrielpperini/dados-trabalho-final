@@ -17,7 +17,7 @@ nodo *InsereArvoreABP(nodo *a, char palavra[max_palavra], char traducao[max_pala
         a->esq = NULL;
         a->dir = NULL;
     }
-    else if (strcmp(palavra, a->palavra) > 0)
+    else if (strcmp(palavra, a->palavra) < 0)
     {
         a->esq = InsereArvoreABP(a->esq, palavra, traducao);
     }
